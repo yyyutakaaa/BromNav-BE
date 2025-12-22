@@ -1,0 +1,7 @@
+{
+  "name": "BromNav BE",
+  "description": "Progressive Web App for Class A/B Moped Navigation in Belgium, featuring specialized routing algorithms based on Belgian traffic laws.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
