@@ -307,7 +307,12 @@ const Controls: React.FC<ControlsProps> = ({
           
           {/* Top Row: Title/HC toggle */}
           <div className="flex justify-between items-center">
-            <h2 className={`text-base ${textClass}`}>Plan Route</h2>
+            {/* Logo & App Name */}
+            <div className="flex items-center gap-2">
+                <img src="/logo.png" alt="BromNav" className="w-7 h-7 object-contain drop-shadow-sm" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <h2 className={`text-base ${textClass}`}>BromNav</h2>
+            </div>
+
             <div className="flex gap-2">
                 <button 
                   onClick={() => setShowSavedRoutes(true)}
